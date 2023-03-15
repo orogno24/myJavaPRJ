@@ -1,6 +1,9 @@
 public class Hello {
     public static void main(String[] args){
 
+        System.out.println("Hello!! My First Java Coding!!");
+
+
         for(int x=1;x<=4;x++){
             if (x==1) {
                 System.out.println("*");
