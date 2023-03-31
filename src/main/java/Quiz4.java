@@ -1,13 +1,18 @@
 public class Quiz4 {
 
     public static void main(String[] args) {
-        int i, k;
+        int x, y, z;
 
-        for (i = 1; i <= 9; i++) {
-            for (k = 2; k <= 9; k++) {
-                System.out.printf("%d * %d = %2d ", k, i, i * k);
+        for (x = 1, y = 2, z = 1; z < 73; y++, z++) {
+
+
+            if (y > 9) {
+                x++;
+                y = 2;
+                System.out.println("");
             }
-            System.out.println("");
+
+            System.out.printf("%d * %d = %2d ", y, x, x * y);
         }
     }
 }
