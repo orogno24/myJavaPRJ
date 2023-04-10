@@ -6,9 +6,8 @@ public class Ex03_01 {
         System.out.printf("%d", 100+100);
         System.out.printf("\n");
 
+
         System.out.printf("%d, %x, %f", 100, 20, 0.1f);
         System.out.printf("\n");
-
     }
-
 }
