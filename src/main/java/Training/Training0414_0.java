@@ -2,12 +2,11 @@ package Training;
 
 import java.util.Scanner;
 
-public class Training0414 {
+public class Training0414_0 {
     public static void main(String[] args) {
-        System.out.print("배열의 길이를 입력하세요 : ");
+        System.out.print("길이 입력 : ");
         Scanner s = new Scanner(System.in);
         int a = s.nextInt();
-
         int[] arr = new int[a];
 
         for (int i = 0; i < arr.length; i++) {
