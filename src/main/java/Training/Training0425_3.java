@@ -5,26 +5,32 @@ import java.util.Scanner;
 public class Training0425_3 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-
-        System.out.print("배열의 길이를 입력하세요 : ");
-        int a = s.nextInt();
+        int[] arr = new int[5];
         int temp;
-        int[] arr = new int[a];
 
-        System.out.print("배열의 값을 입력하세요 : ");
-        for(int i = 0; i < arr.length; i++){
-            arr[i] = s.nextInt();
-        }
-
-        for(int i = 0; i < arr.length; i++){
-            for(int k = i+1; k < arr.length; k++){
-                if(arr[i] < arr[k]){
-                    temp = arr[i];
-                    arr[i] = arr[k];
-                    arr[k] = temp;
+        for (int a = 0; a < arr.length; a++) {
+            arr[a] = s.nextInt();
+            for (int b = 0; b < a; b++) {
+                if (arr[a] == arr[b]) {
+                    System.out.print("중복!");
+                    a--;
+                    break;
                 }
             }
-            System.out.print(arr[i] + " ");
+        }
+
+        for (int b = 0; b < arr.length; b++) {
+            for (int c = b + 1; c < arr.length; c++) {
+                if (arr[b] > arr[c]) {
+                    temp = arr[c];
+                    arr[c] = arr[b];
+                    arr[b] = temp;
+                }
+            }
+        }
+
+        for (int c = 0; c < arr.length; c++) {
+            System.out.printf("%d ", arr[c]);
         }
     }
 }

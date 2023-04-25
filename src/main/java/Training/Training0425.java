@@ -5,13 +5,23 @@ import java.util.Scanner;
 public class Training0425 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int n = s.nextInt();
+        int x = s.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = i; j < n; j++) {
+        for (int a = 0; a < x; a++) {
+            for (int b = x; b > a + 1; b--) {
                 System.out.print("o");
             }
-            for (int j = 1; j <= 2 * i - 1; j++) {
+            for (int c = 0; c <= 2 * a + 1; c++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for (int a = x - 1; a > 0; a--) {
+            for (int b = 0; b < x-a; b++) {
+                System.out.print("o");
+            }
+            for (int c = 1; c <= 2 * a - 1; c++) {
                 System.out.print("*");
             }
             System.out.println();

@@ -1,23 +1,17 @@
 package Training;
 
-import java.util.Scanner;
-
 public class Training0425_0 {
     public static void main(String[] args) {
-        int z = 0;
-        Scanner s = new Scanner(System.in);
-        int a = s.nextInt();
+        int x, y;
 
-        for(int y = 0; y < a; y++){
-            if (y < a-a/2) {
-                z++;
-            } else {
-                z--;
+        for (x = 1, y = 1; x < 6; y++) {
+            System.out.print("*");
+            if (x == y) {
+                x++;
+                y = 0;
+                System.out.println();
             }
-            for(int x = 0; x < z; x++){
-                System.out.print("*");
-            }
-            System.out.println();
         }
+
     }
 }
