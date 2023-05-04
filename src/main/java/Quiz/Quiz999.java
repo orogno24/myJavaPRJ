@@ -1,3 +1,5 @@
+package Quiz;
+
 public class Quiz999 {
     public static void main(String[] args) {
         int a, b;

@@ -1,13 +1,24 @@
-public class Ex03_01 {
+import java.util.*;
+
+class Ex03_01 {
     public static void main(String[] args) {
-        System.out.printf("100+100");
-        System.out.printf("\n");
-        //%d는 숫자를 의미함 밑의 코드는 100 + 100의 결과를 %d라는 글자로 출력하라, 라는 의미
-        System.out.printf("%d", 100+100);
-        System.out.printf("\n");
+        List<Integer> list = new LinkedList<>();
+        Scanner s = new Scanner(System.in);
+        for(int a = 0; a < 5; a++){
+            int num = s.nextInt();
+            list.add(num);
+        }
 
-
-        System.out.printf("%d, %x, %f", 100, 20, 0.1f);
-        System.out.printf("\n");
+        for(int b = 0; b < list.size(); b++){
+            for(int c = b + 1; c < list.size(); c++){
+                if(list.get(b) == list.get(c)){
+                    list.remove(c);
+                    c--;
+                }
+            }
+        }
+        for(int num : list){
+            System.out.print(num + " ");
+        }
     }
 }
