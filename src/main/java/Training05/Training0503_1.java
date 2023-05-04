@@ -1,26 +1,11 @@
 package Training05;
 
-<<<<<<< HEAD
-import java.util.*;
-
-public class Training0503 {
-    public static void main(String[] args) {
-        HashSet<Integer> set = new HashSet<>();
-        Scanner s = new Scanner(System.in);
-
-        for(int i = 0; i < 5; i++){
-            set.add(s.nextInt());
-        }
-
-        System.out.print(set);
-
-=======
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Training0503 {
+public class Training0503_1 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         List<Integer> list = new LinkedList<>();
@@ -43,6 +28,5 @@ public class Training0503 {
             System.out.print(num + " ");
         }
         System.out.print("입니다.");
->>>>>>> origin/master
     }
 }
