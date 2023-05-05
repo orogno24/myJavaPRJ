@@ -1,4 +1,4 @@
-package Training;
+package Quiz;
 
 import java.util.Scanner;
 
