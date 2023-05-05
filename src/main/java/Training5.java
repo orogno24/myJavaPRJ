@@ -7,7 +7,7 @@ public class Training5 {
         int a, b;
         char ch;
 
-        while (3 > 1) {
+        while (true) {
             System.out.printf("계산할 첫번째 수를 입력 : ");
             a = s.nextInt();
             System.out.printf("계산할 두번째 수를 입력 : ");
