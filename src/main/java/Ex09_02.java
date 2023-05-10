@@ -9,12 +9,6 @@ public class Ex09_02 {
         str = s.nextLine();
 
         System.out.print("출력 문자열 ==> ");
-//        for(int i = 0; i < str.length(); i++){
-//            if(str.charAt(i) == 'o')
-//                System.out.printf("%c", '$');
-//            else
-//                System.out.printf("%c", str.charAt(i));
-//        }
 
         System.out.println("내가 사용한 함수 : " + str.replaceAll("o", "q"));
     }
