@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class Training0426 {
     public static void main(String[] args) {
+
         Scanner s = new Scanner(System.in);
+
         int x = s.nextInt();
 
         for (int a = 0; a < x; a++) {
