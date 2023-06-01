@@ -1,3 +1,5 @@
+package ZanDi06;
+
 import java.util.Scanner;
 
 
