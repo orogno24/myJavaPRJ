@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 
-public class ZanDi06 {
+public class ZanDi0601 {
     public static void main(String[] args) {
 
         System.out.println("Quiz) DELETE, SELECT, DIVISION, JOIN 즁 순수 관계 연산자에 해당하지 않는 것을 대문자로 입력하시오 : ");
