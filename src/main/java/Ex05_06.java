@@ -109,8 +109,6 @@ public class Ex05_06 {
 
 
 
-
-
         System.out.println(leehyupgun);
     }
 }
