@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>quiz</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+  var a;
+  var input = prompt("단어의 개수를 입력하세요", "");
+  var arr = [input];
+
+  for (a = 0; a < input; a++) {
+    arr[a] = prompt("단어를 입력하세요", "");
+  }
+
+
+  document.write("배열의 크기 : " + arr.length + "<br><br>");
+
+  arr.sort();
+
+  document.write("오름차순 정렬...<br><br>");
+
+  document.write("배열의 내용:<br>");
+
+  for (a = 0; a < input; a++) {
+    document.write("word_array[" + a + "]: " + arr[a] + "<br>");
+  }
+
+  document.write("<br>내림차순 정렬...<br><br>");
+
+  document.write("배열의 내용:<br>");
+
+  arr.reverse();
+
+  for (a = 0; a < input; a++) {
+    document.write("word_array[" + a + "]: " + arr[a] + "<br>");
+  }
+</script>
+
+</body>
+</html>
