@@ -6,6 +6,7 @@ import java.util.Set;
 
 public class ZanDi0614 {
     public static void main(String[] args) {
+
         Scanner s = new Scanner(System.in);
         Set<Integer> set = new HashSet<>();
 
