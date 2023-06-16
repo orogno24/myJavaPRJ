@@ -16,7 +16,9 @@ public class ZanDi0612_9 {
 
         String[] split3 = split2[0].split("\\+|-|\\*|/|%");
 
-        System.out.println("1번째 숫자 : " + split[0] + " 2번째 숫자 : " + split3[1]);
+        String[] split4 = st.split("=");
+
+        System.out.println("계수는 : " + split[0] + ", " + split3[1] +" 상수는 : " +split4[1]);
 
     }
 }
