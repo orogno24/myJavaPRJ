@@ -7,6 +7,7 @@ public class Test02 {
                 a++;
                 b = 0;
                 System.out.println();
+
             }
         }
     }

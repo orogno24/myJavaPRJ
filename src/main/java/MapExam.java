@@ -22,9 +22,5 @@ public class MapExam {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         });
 
-        System.out.println("1세대 반복문");
-
-
-
     }
 }
