@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class ZanDi0623 {
+
     public static void main(String[] args) {
 
         List<Integer> num = new ArrayList<>();
