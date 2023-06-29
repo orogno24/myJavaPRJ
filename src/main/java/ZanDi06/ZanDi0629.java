@@ -2,6 +2,7 @@ package ZanDi06;
 
 public class ZanDi0629 {
     public static void main(String[] args) {
+
         int x = 13, y = 9, z = 2;
 
         switch (x ^ y){
