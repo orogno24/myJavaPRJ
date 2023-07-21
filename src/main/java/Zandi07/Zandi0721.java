@@ -5,7 +5,7 @@ class Connection {
     private int count = 0;
 
     static public Connection get() {
-        if(num == null) {
+        if (num == null) {
             num = new Connection();
             return num;
         }
