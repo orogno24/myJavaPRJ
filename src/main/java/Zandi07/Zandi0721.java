@@ -15,6 +15,7 @@ class Connection {
     public int getCount() { return count;}
 }
 
+
 public class Zandi0721 {
     public static void main(String[] args) {
         Connection conn1 = Connection.get();
