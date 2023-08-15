@@ -15,7 +15,6 @@ public class Zandi0815 {
                 System.out.print("right");
             } else System.out.print("wrong");
         }
-
     }
 
     public static void main(String[] args) {
