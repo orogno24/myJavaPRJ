@@ -5,9 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Title</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    #webcam-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    #label-container {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-<div>Teachable Machine Pose Model</div>
+<div>팀프로젝트 테스트 2</div>
 <button type="button" onclick="init()">Start</button>
 <div><canvas id="canvas"></canvas></div>
 <div id="label-container"></div>
@@ -94,7 +141,7 @@
 
   function showQweMessage() {
     const messageElement = document.createElement("div");
-    messageElement.textContent = "qwe";
+    messageElement.textContent = "올바른 자세입니다!";
     labelContainer.appendChild(messageElement);
     return messageElement;
   }
@@ -107,7 +154,7 @@
 
   function showAsdMessage() {
     const messageElement = document.createElement("div");
-    messageElement.textContent = "asd";
+    messageElement.textContent = "주의 : 거북목 유발 자세입니다!";
     labelContainer.appendChild(messageElement);
     return messageElement;
   }
@@ -132,7 +179,7 @@
   }
 
   function updateTimerDisplay() {
-    timerElement.innerHTML = `타이머: ${timerValue}초`;
+    //timerElement.innerHTML = `타이머: ${timerValue}초`;
   }
 
   function checkWarningState() {
@@ -167,7 +214,7 @@
   }
 
   function playAlertSound() {
-    const alertSound = new Audio("./my_model2/Mion.mp3");
+    const alertSound = new Audio("./my_model2/mimic.mp3");
     alertSound.play();
   }
 
