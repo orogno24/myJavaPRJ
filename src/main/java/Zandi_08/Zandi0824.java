@@ -24,4 +24,5 @@ public class Zandi0824 {
             System.out.println();
         }
     }
+
 }
