@@ -9,7 +9,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
-@Slf4j
 public class Zandi0817 {
 
     public static String get(String apiUrl){
