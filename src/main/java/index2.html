@@ -111,7 +111,7 @@
       if (!qweMessageElement) {
         qweMessageElement = showQweMessage(); // "qwe" 메시지 요소를 생성하고 저장
       }
-    } else if (prediction[1].probability.toFixed(2) >= 1.00) {
+    } else if (prediction[1].probability.toFixed(2) >= 0.9) {
       resetTimer();
       if (!asdMessageElement) {
         asdMessageElement = showAsdMessage(); // "asd" 메시지 요소를 생성하고 저장
@@ -215,6 +215,7 @@
 
   function playAlertSound() {
     const alertSound = new Audio("./my_model2/mimic.mp3");
+    alert("주의! 부적절한 자세를 5분 이상 취한 상태입니다!");
     alertSound.play();
   }
 
