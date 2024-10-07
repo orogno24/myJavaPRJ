@@ -3,6 +3,7 @@ public class Ex07_05 {
         int hap = 0;
         int i;
 
+
         for (i = 1; i <= 100; i++){
             hap += i;
 
