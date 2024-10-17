@@ -3,23 +3,26 @@ import java.util.*;
 public class S10_17 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        wordFreqCount(input);
+        int[] result = solution(new int[]{1, 1, 3, 3, 0, 1, 1});
+        System.out.println(Arrays.toString(result));
     }
 
-    public static void wordFreqCount(String input) {
-        Map<Character, Integer> hashMap = new HashMap<>();
+    public static int[] solution(int[] arr) {
+        int[] answer;
 
-        for (char c : input.toCharArray()) {
-            if (Character.isLetter(c)) {
-                c = Character.toLowerCase(c);
-                hashMap.put(c, hashMap.getOrDefault(c, 0) + 1);
-            }
+        Stack<Integer> st = new Stack<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            if (i == 0) st.push(arr[i]);
+            else if (st.peek() != arr[i]) st.push(arr[i]);
         }
 
-        for (Map.Entry<Character, Integer> entry : hashMap.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
+        answer = new int[st.size()];
+
+        for (int i = st.size() - 1; i >= 0; i--) {
+            answer[i] = st.pop();
         }
+
+        return answer;
     }
 }
