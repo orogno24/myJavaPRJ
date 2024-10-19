@@ -29,15 +29,15 @@ public class Sort {
     public static int[] 선택정렬(int[] arr) {
 
         for (int x = 0; x < arr.length - 1; x++) {
-            int minIdx = x;
+            int idx = x;
             for (int y = x + 1; y < arr.length; y++) {
-                if (arr[y] < arr[minIdx]) {
-                    minIdx = y;
+                if (arr[y] < arr[idx]) {
+                    idx = y;
                 }
             }
             int temp = arr[x];
-            arr[x] = arr[minIdx];
-            arr[minIdx] = temp;
+            arr[x] = arr[idx];
+            arr[idx] = temp;
         }
 
         return arr;
