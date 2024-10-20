@@ -13,11 +13,10 @@ public class Sort {
     }
 
     public static int[] 버블정렬(int[] arr) {
-        int temp;
         for (int x = 0; x < arr.length - 1; x++) {
             for (int y = 0; y < arr.length - 1; y++) {
                 if (arr[y] > arr[y + 1]) {
-                    temp = arr[y];
+                    int temp = arr[y];
                     arr[y] = arr[y + 1];
                     arr[y + 1] = temp;
                 }
