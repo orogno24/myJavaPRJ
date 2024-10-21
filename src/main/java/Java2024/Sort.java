@@ -13,7 +13,9 @@ public class Sort {
     }
 
     public static int[] 버블정렬(int[] arr) {
+
         for (int x = 0; x < arr.length - 1; x++) {
+
             for (int y = 0; y < arr.length - 1; y++) {
                 if (arr[y] > arr[y + 1]) {
                     int temp = arr[y];
@@ -21,6 +23,7 @@ public class Sort {
                     arr[y + 1] = temp;
                 }
             }
+
         }
         return arr;
     }
@@ -28,12 +31,15 @@ public class Sort {
     public static int[] 선택정렬(int[] arr) {
 
         for (int x = 0; x < arr.length - 1; x++) {
+
             int idx = x;
+
             for (int y = x + 1; y < arr.length; y++) {
                 if (arr[y] < arr[idx]) {
                     idx = y;
                 }
             }
+
             int temp = arr[x];
             arr[x] = arr[idx];
             arr[idx] = temp;
@@ -57,7 +63,7 @@ public class Sort {
             arr[y + 1] = current;
 
         }
-        
+
         return arr;
     }
 
