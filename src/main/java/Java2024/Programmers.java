@@ -12,6 +12,7 @@ public class Programmers {
         System.out.println(Arrays.toString(sortMethod(arr)));
         System.out.println(Arrays.toString(sortMethod2(arr2)));
         System.out.println(Arrays.toString(sortMethod3(arr3)));
+
     }
 
     public static int[] sortMethod(int[] arr) {
